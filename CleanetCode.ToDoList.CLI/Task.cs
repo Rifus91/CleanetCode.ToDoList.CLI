@@ -4,7 +4,7 @@ namespace CleanetCode.ToDoList.CLI
 {
     partial class Program
     {
-        class Task
+        public class Task
 
         {
             public Guid Id { get; set; }
