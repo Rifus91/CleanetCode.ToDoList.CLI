@@ -9,6 +9,7 @@ namespace CleanetCode.ToDoList.CLI
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine(1);
+            Console.WriteLine("add sring");
 
         }
     }
