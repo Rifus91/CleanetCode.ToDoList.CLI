@@ -1,6 +1,10 @@
-﻿namespace CleanetCode.ToDoList.CLI
+﻿
+namespace CleanetCode.ToDoList.CLI
 {
-    
-        public class Application { }
-    
+
+    public class Application
+    {
+        
+    }
+
 }
