@@ -12,7 +12,7 @@ namespace CleanetCode.ToDoList.CLI.Operations
 
         public void Execute()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("User logged in");
         }
     }
 }

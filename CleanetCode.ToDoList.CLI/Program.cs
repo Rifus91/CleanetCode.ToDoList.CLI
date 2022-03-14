@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CleanetCode.ToDoList.CLI.Operations;
+using System;
 
 namespace CleanetCode.ToDoList.CLI
 {
@@ -7,9 +8,18 @@ namespace CleanetCode.ToDoList.CLI
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(1);
+            IOperation[] operations = new IOperation[]
+            {
+                new CreateNewUserOperation(),
+                new LoginUserOperation(),
+            };
 
+            Menu menu = new Menu(operations);
+            Application application = new Application(menu );
+            application.Run();
+           
+
+            Console.ReadKey();
         }
     }
 }

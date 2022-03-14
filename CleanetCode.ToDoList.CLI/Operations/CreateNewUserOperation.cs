@@ -8,7 +8,7 @@ namespace CleanetCode.ToDoList.CLI.Operations
         public string Name { get; set; }
         public void Execute()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("User created");
         }
     }
 
