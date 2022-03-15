@@ -8,7 +8,7 @@ namespace CleanetCode.ToDoList.CLI.Operations
 {
     public class LoginUserOperation : IOperation
     {
-        public string Name { get ; set ; }
+        public string Name => "Login into the system";
 
         public void Execute()
         {
