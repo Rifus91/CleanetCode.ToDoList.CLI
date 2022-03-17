@@ -1,5 +1,6 @@
 ﻿using CleanetCode.ToDoList.CLI.Operations;
 using System;
+using System.Text;
 
 namespace CleanetCode.ToDoList.CLI
 {
@@ -8,10 +9,11 @@ namespace CleanetCode.ToDoList.CLI
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             IOperation[] operations = new IOperation[]
             {
-                new CreateNewUserOperation(),
                 new LoginUserOperation(),
+                new CreateNewUserOperation(),               
             };
 
             Menu menu = new Menu(operations);

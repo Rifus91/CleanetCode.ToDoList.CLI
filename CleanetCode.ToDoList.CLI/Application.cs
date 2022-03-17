@@ -17,7 +17,7 @@ namespace CleanetCode.ToDoList.CLI
         {
             string[] operationNames = _menu.GetOperationNames();
 
-            Console.WriteLine(string.Join(", ", operationNames));
+            Console.WriteLine(string.Join("\n", operationNames));
         }
     }
 
