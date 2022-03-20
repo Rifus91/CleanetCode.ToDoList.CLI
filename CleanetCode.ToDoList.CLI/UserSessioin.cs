@@ -1,6 +1,11 @@
-﻿namespace CleanetCode.ToDoList.CLI
+﻿using CleanetCode.ToDoList.CLI.Models;
+
+namespace CleanetCode.ToDoList.CLI
 {
-    
-        public class UserSessioin { }
+
+    public static class UserSessioin
+    {
+        public static User CurrentUser { get; set; }
+    }
     
 }

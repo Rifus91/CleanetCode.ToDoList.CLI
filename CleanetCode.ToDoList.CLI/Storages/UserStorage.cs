@@ -12,9 +12,9 @@ namespace CleanetCode.ToDoList.CLI.Storages
             return user;
         }
 
-        public static void Create(User user)
+        public static bool Create(User user)
         {
-            _users.Add(user.Email, user);
+           return _users.TryAdd(user.Email, user);
         }
     }
     

@@ -18,7 +18,11 @@ namespace CleanetCode.ToDoList.CLI.Operations
                 Email = email,
             };
 
-            UserStorage.Create(newUser);
+           bool UserCreated = UserStorage.Create(newUser);
+            if (!UserCreated)
+            {
+                Console.WriteLine("Пользователь с таким email уже есть или произошла ошибка (по хорошему вернуть список вариантов ошибок)");
+            }
 
             Console.WriteLine("Пользователь был успешно создан");
 

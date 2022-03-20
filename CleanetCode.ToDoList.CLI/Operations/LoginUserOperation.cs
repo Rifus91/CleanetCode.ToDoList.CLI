@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CleanetCode.ToDoList.CLI.Models;
+using CleanetCode.ToDoList.CLI.Storages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,14 @@ namespace CleanetCode.ToDoList.CLI.Operations
 
         public void Execute()
         {
-            Console.WriteLine("User logged in");
+            Console.WriteLine("Введите ваш email");
+            string? email = Console.ReadLine();
+            User? user = UserStorage.Get(email);
+
+            if (user == null) 
+            {
+            UserSessioin.CurrentUser = user;
+            }
         }
     }
 }
